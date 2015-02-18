@@ -3,6 +3,7 @@ include_directories(
     "${CMAKE_SOURCE_DIR}/src/auth"
 )
 include_directories("${CMAKE_BINARY_DIR}/src/common")
+include_directories("${LIBXCB_INCLUDE_DIR}")
 
 set(DAEMON_SOURCES
     ${CMAKE_SOURCE_DIR}/src/common/Configuration.cpp
